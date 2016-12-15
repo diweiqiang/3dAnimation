@@ -1,0 +1,92 @@
+body{
+    background-color: #faf9de;
+}
+#wrapper{
+    width: 1100px;
+    margin:40px auto;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 1.8em;
+    color: darkseagreen;
+    font-style: italic;
+    text-align: right;
+    text-shadow: 1px 1px 5px grey;
+}
+h2:hover{
+    color:darkcyan ;
+}
+h1 small{
+    background: linear-gradient(to right,lightblue, #ffb021,lightblue);
+    display: block;
+    width: 350px;
+    margin-left:500px;
+    font-size: 20px;
+    letter-spacing:7px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+#content .info {
+    padding:10px;
+    font-size: 1.4em;
+}
+/*basic list thing*/
+#movieposters{
+    list-style: none;
+    margin: 100px 0;
+}
+#movieposters li{
+    float: left;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transition:perspective 0.5s;
+}
+#movieposters li:hover{
+    perspective: 5000px;
+}
+#movieposters li img{
+    border:10px solid lightgray;
+    transform:rotateY(30deg);
+    box-shadow: 0 3px 10px #888;
+    transition: transform 0.5s;
+}
+#movieposters li:hover img{
+    transform: rotateY(0deg);
+}
+.movieinfo{
+    /*margin-bottom: 100px;*/
+    width: 200px;
+    /*height: 180px;*/
+    border:solid 10px lightgray;
+    padding: 20px;
+    background-color: #ddd;
+    margin: -195px 0 120px 30px;
+    position: absolute;
+    box-shadow:0 20px 30px #888;
+    transform:translateZ(30px) rotateY(30deg);
+    transition:transform 0.5s;
+}
+#movieposters li:hover .movieinfo{
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px #888;
+}
+/*some basic css for the movieinfo*/
+.movieinfo h3{
+    text-align: center;
+    color: lightcoral;
+    font-family:Georgia,"Times New Roman",Serif;
+    margin-top:0;
+}
+.movieinfo a{
+    background-color: #7a3f3a;
+    padding:5px 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 5px;
+}
